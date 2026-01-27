@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLIDCoffee</title>
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">SOLIDCoffee</div>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About us</a>
+        <a href="#">Contacts</a>
+        <a href="#">SignUp</a>
+    </nav>
+</header>
+
+<!-- Добавлен контейнер для основного контента -->
+<main class="main-content">
+    <section class="hero">
+        <h1>Let's drink coffee</h1>
+        <p></p>
+        <button>Order</button>
+    </section>
+</main>
+
+<button class="chat-toggle">💬</button>
+
+<div class="chat-widget hidden">
+    <div class="chat-header">
+        <span>Chat</span>
+        <button class="chat-close">✕</button>
+    </div>
+
+    <div class="chat-messages">
+        <div class="message bot">Здравствуйте! Чем могу помочь?</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" placeholder="Введите сообщение...">
+        <button>➤</button>
+    </div>
+</div>
+
+
+<!-- JavaStriptiz -->
+<script>
+    const toggle = document.querySelector(".chat-toggle");
+    const chat = document.querySelector(".chat-widget");
+    const closeBtn = document.querySelector(".chat-close");
+
+    toggle.addEventListener("click", () => {
+        chat.classList.remove("hidden");
+        toggle.style.display = "none";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        chat.classList.add("hidden");
+        toggle.style.display = "block";
+    });
+</script>
+
+<footer class="footer">
+    <p>© 2026 CoffeePoint.</p>
+</footer>
+
+</body>
+</html>
