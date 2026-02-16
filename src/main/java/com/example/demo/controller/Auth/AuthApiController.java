@@ -1,29 +1,39 @@
 package com.example.demo.controller.Auth;
 
 
+import com.example.demo.model.dto.Request.SignInRequest;
+import com.example.demo.model.dto.Request.SignUpRequest;
+import com.example.demo.service.inteface.AuthInterfaces.AuthService;
+import com.example.demo.service.inteface.AuthInterfaces.RegisterService;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
+@RequiredArgsConstructor
 @RequestMapping("/api/auth")
 public class AuthApiController {
-//    private final AuthServiceImpl authService;
-//
-//    public AuthApiController(AuthServiceImpl authService){
-//        this.authService = authService;
-//    }
-//
-//    @PostMapping("/sighin")
-//    public ResponseEntity<?> signIn(@Valid @RequestBody SignInRequest signInRequest){
-//        return ResponseEntity.ok("Hi");
-//    }
-//
-//    @PostMapping("/signUp")
-//    public ResponseEntity<?> signUp(@Valid @RequestBody SignUpRequest signUpRequest){
-//        return ResponseEntity.ok("HI");
-//    }
+    private final AuthService authService;
+    private final RegisterService registerService;
+
+    @PostMapping("/signin")
+    public ResponseEntity<?> signIn(@Valid @ModelAttribute SignInRequest signInRequest, HttpServletResponse response){
+        System.out.println("Auth");
+        return authService.authUser(signInRequest, response);
+    }
+
+    @PostMapping("/signup")
+    public ResponseEntity<?> signUp(@Valid @ModelAttribute SignUpRequest signUpRequest){
+        System.out.println("Register");
+        registerService.registerUser(signUpRequest);
+        return ResponseEntity.ok("Success");
+    }
+
+    @GetMapping("/logout")
+    public String logout(){
+        return "/";
+    }
 }

@@ -1,19 +1,19 @@
 package com.example.demo.model.coffee;
 
 
-public class Latte extends Beverage{
+public class Espresso extends Beverage {
     @Override
     public double getPrice() {
-        return 2.99;
+        return 0.99;
     }
 
     @Override
     public String getDescription(){
-        return "Latte";
+        return "Espresso";
     }
 
     @Override
     public String toString(){
-        return "Latte";
+        return "Espresso";
     }
 }

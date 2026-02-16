@@ -10,20 +10,31 @@
 <header class="header">
     <div class="logo">SOLIDCoffee</div>
     <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About us</a>
-        <a href="#">Contacts</a>
-        <a href="#">SignUp</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#">Menu</a>
+        </div>
+
+        <div id="guest-zone" class="auth-zone">
+            <a href="/public/auth" class="signup-btn">Login / SignUp</a>
+        </div>
+
+        <div id="user-zone" class="auth-zone hidden">
+            <span id="username-display" class="user-name"></span>
+            <form action="/api/auth/logout" method="post" class="logout-form">
+                <button type="submit" class="logout-btn">Logout</button>
+            </form>
+        </div>
     </nav>
 </header>
 
-<!-- Добавлен контейнер для основного контента -->
 <main class="main-content">
     <section class="hero">
         <h1>Let's drink coffee</h1>
         <p></p>
-        <button>Order</button>
+        <a href="/private/order">
+            <button>Order</button>
+        </a>
     </section>
 </main>
 
@@ -40,13 +51,51 @@
     </div>
 
     <div class="chat-input">
-        <input type="text" placeholder="Введите сообщение...">
+        <label>
+            <input type="text" placeholder="Введите сообщение...">
+        </label>
         <button>➤</button>
     </div>
 </div>
 
 
 <!-- JavaStriptiz -->
+
+<!-- Auth -->
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+    const guestZone = document.getElementById("guest-zone");
+    const userZone = document.getElementById("user-zone");
+    const userNameSpan = document.getElementById("username-display");
+
+    try {
+        const response = await fetch('/api/user/getUsername');
+
+        if (response.ok) {
+            const user = await response.json();
+
+            if (user && user.name) {
+                userNameSpan.textContent = user.name;
+                userZone.classList.remove("hidden");
+                guestZone.classList.add("hidden");
+            } else {
+                showGuest();
+            }
+        } else {
+            showGuest();
+        }
+    } catch (err) {
+        showGuest();
+    }
+
+    function showGuest() {
+        guestZone.classList.remove("hidden");
+        userZone.classList.add("hidden");
+    }
+});
+</script>
+
+<!-- Chat -->
 <script>
     const toggle = document.querySelector(".chat-toggle");
     const chat = document.querySelector(".chat-widget");
@@ -62,6 +111,8 @@
         toggle.style.display = "block";
     });
 </script>
+
+
 
 <footer class="footer">
     <p>© 2026 CoffeePoint.</p>

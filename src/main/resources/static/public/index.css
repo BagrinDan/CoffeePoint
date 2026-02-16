@@ -228,3 +228,50 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+
+.hidden {
+    display: none !important;
+}
+
+/* Общие настройки навигации */
+.nav {
+    display: flex;
+    align-items: center; /* Центрируем всё по вертикали */
+}
+
+/* Контейнер для кнопок авторизации и ника */
+.auth-zone {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между ником и кнопкой */
+    margin-left: 25px; /* Отступ от ссылок меню */
+}
+
+/* Стили для ника пользователя */
+.user-name {
+    color: #c49a6c; /* Золотисто-кофейный цвет под ваш бренд */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logout-btn {
+    padding: 6px 15px;
+    border: 1px solid #c49a6c;
+    background: transparent;
+    color: #c49a6c;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c49a6c;
+    color: #2b1b12;
+}
+
+.signup-btn {
+    color: #fff !important;
+    font-weight: bold;
+
+}
