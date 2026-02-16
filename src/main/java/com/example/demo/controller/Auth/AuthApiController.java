@@ -20,20 +20,16 @@ public class AuthApiController {
     private final RegisterService registerService;
 
     @PostMapping("/signin")
-    public ResponseEntity<?> signIn(@Valid @ModelAttribute SignInRequest signInRequest, HttpServletResponse response){
+    public String signIn(@Valid @ModelAttribute SignInRequest signInRequest, HttpServletResponse response){
         System.out.println("Auth");
-        return authService.authUser(signInRequest, response);
+        authService.authUser(signInRequest, response);
+        return "redirect:/";
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<?> signUp(@Valid @ModelAttribute SignUpRequest signUpRequest){
+    public String signUp(@Valid @ModelAttribute SignUpRequest signUpRequest){
         System.out.println("Register");
         registerService.registerUser(signUpRequest);
-        return ResponseEntity.ok("Success");
-    }
-
-    @GetMapping("/logout")
-    public String logout(){
-        return "/";
+        return "redirect:/";
     }
 }

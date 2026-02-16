@@ -16,7 +16,7 @@
 <div class="login-container">
     <h2>Login</h2>
 
-    <!-- Форма логина -->
+    <!-- Login form -->
     <form th:action="@{/api/auth/signin}" method="post">
         <label>
             <input type="text" name="username" placeholder="Username" required>
@@ -33,11 +33,12 @@
 </div>
 </body>
 
+<!-- Auth script-->
 <script>
     const form = document.querySelector('form');
     form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
+        e.preventDefault();
+        const formData = new FormData(form);
 
     const response = await fetch('/api/auth/signin', {
         method: 'POST',
@@ -47,7 +48,7 @@
     if (response.ok) {
         window.location.href = '/';
     } else {
-        alert('Ошибка входа!');
+        alert('Auth error!');
     }
 });
 </script>

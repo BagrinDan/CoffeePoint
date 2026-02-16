@@ -17,4 +17,9 @@ public class AuthPageController {
     public String registerPage(){
         return "public/register";
     }
+
+    @GetMapping("/logout")
+    public String logout(){
+        return "/";
+    }
 }
