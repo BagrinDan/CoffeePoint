@@ -1,8 +1,7 @@
 package com.example.demo.controller.User;
 
-import com.example.demo.service.inteface.UserService;
+import com.example.demo.service.inteface.service_interfaces.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

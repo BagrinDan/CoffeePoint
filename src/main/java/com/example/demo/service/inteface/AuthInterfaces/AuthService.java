@@ -1,7 +1,7 @@
 package com.example.demo.service.inteface.AuthInterfaces;
 
 
-import com.example.demo.model.dto.Request.SignInRequest;
+import com.example.demo.model.dto.Request.auth.SignInRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.ResponseEntity;
 

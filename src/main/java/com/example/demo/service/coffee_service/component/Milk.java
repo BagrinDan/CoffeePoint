@@ -1,4 +1,4 @@
-package com.example.demo.model.coffee.component;
+package com.example.demo.service.coffee_service.component;
 import com.example.demo.model.coffee.Beverage;
 
 

@@ -51,14 +51,13 @@
 </head>
 <body>
 <div class="success-container">
-    <h1>Спасибо за заказ!</h1>
-    <p>Ваш кофе готовится ☕</p>
+    <h1>Thank you for order!</h1>
 
     <p style="font-weight: bold; font-size: 22px; color: #8b5e3c;">
-        К оплате: <span th:text="${price}">0.00</span>
+        Price: <span th:text="${price}">0.00</span>
     </p>
 
-    <a th:href="@{/public/order}">Сделать ещё заказ</a>
+    <a th:href="@{/}">Main menu</a>
 </div>
 
 </body>

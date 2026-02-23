@@ -1,9 +1,8 @@
-package com.example.demo.model.coffee.factory;
+package com.example.demo.service.coffee_service.factory;
 
-import com.example.demo.model.coffee.Americano;
 import com.example.demo.model.coffee.Beverage;
 import com.example.demo.model.coffee.Espresso;
-import com.example.demo.model.enums.CoffeeEnum;
+import com.example.demo.model.enums.coffee_enums.CoffeeEnum;
 import org.springframework.stereotype.Component;
 
 @Component

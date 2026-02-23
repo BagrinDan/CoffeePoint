@@ -1,6 +1,6 @@
-package com.example.demo.service.inteface;
+package com.example.demo.service.inteface.service_interfaces;
 
-import com.example.demo.model.dto.Request.SignUpRequest;
+import com.example.demo.model.dto.Request.auth.SignUpRequest;
 import com.example.demo.model.entity.User;
 
 import java.security.Principal;

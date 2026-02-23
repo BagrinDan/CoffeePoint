@@ -1,10 +1,10 @@
-package com.example.demo.model.coffee;
+package com.example.demo.service.coffee_service.factory;
 
 
 // factory method
 
-import com.example.demo.model.coffee.factory.CoffeeFactory;
-import com.example.demo.model.enums.CoffeeEnum;
+import com.example.demo.model.coffee.Beverage;
+import com.example.demo.model.enums.coffee_enums.CoffeeEnum;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -12,10 +12,10 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
-public class CoffeeFactoryImpl {
+public class CoffeeProducer {
     private final Map<CoffeeEnum, CoffeeFactory> creators;
 
-    public CoffeeFactoryImpl(List<CoffeeFactory> creatorList) {
+    public CoffeeProducer(List<CoffeeFactory> creatorList) {
         this.creators = creatorList.stream()
                 .collect(Collectors.toMap(
                         CoffeeFactory::type,

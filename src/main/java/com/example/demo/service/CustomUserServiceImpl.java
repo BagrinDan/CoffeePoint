@@ -3,8 +3,7 @@ package com.example.demo.service;
 
 import com.example.demo.model.entity.User;
 import com.example.demo.security.UserDetailsImpl;
-import com.example.demo.service.inteface.UserService;
-import jakarta.validation.constraints.NotNull;
+import com.example.demo.service.inteface.service_interfaces.UserService;
 import org.jspecify.annotations.NullMarked;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

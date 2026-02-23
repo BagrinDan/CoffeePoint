@@ -1,8 +1,8 @@
 package com.example.demo.controller.Auth;
 
 
-import com.example.demo.model.dto.Request.SignInRequest;
-import com.example.demo.model.dto.Request.SignUpRequest;
+import com.example.demo.model.dto.Request.auth.SignInRequest;
+import com.example.demo.model.dto.Request.auth.SignUpRequest;
 import com.example.demo.service.inteface.AuthInterfaces.AuthService;
 import com.example.demo.service.inteface.AuthInterfaces.RegisterService;
 import jakarta.servlet.http.HttpServletResponse;

@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
 
-import com.example.demo.model.dto.Request.SignInRequest;
+import com.example.demo.model.dto.Request.auth.SignInRequest;
 import com.example.demo.security.JwtCore;
 import com.example.demo.service.inteface.AuthInterfaces.AuthService;
 import jakarta.servlet.http.Cookie;

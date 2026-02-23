@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
-import com.example.demo.model.dto.Request.SignUpRequest;
+import com.example.demo.model.dto.Request.auth.SignUpRequest;
 import com.example.demo.model.entity.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.service.inteface.AuthInterfaces.RegisterService;
-import com.example.demo.service.inteface.UserService;
+import com.example.demo.service.inteface.service_interfaces.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
-package com.example.demo.model.coffee.component;
+package com.example.demo.service.coffee_service.component;
 
 import com.example.demo.model.coffee.Beverage;
-import com.example.demo.model.enums.CondimentEnum;
+import com.example.demo.model.enums.coffee_enums.CondimentEnum;
 
 public class CondimentFactory {
     public static Beverage addCondiment(Beverage beverage, CondimentEnum condiment){
