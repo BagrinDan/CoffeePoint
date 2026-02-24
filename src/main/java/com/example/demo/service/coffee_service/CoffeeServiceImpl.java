@@ -56,7 +56,6 @@ public class CoffeeServiceImpl implements CoffeeService {
     public double getPrice(Beverage beverage){
         return beverage.getPrice();
     }
-
     // TODO: Get orders
     // TODO: Update order
     // TODO: Delete order

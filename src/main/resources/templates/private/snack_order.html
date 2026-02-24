@@ -109,15 +109,9 @@
 <body>
 <form th:action="@{/snack/create_order}" method="post">
     <label for="snackType">Snack</label>
-    <select name="" id="snackType" required>
-        <option value="PLACINTABRINZA">Placinta cu brinza</option>
+    <select name="snackType" id="snackType" required>
+        <option value="CHEESEPIE">Placinta cu brinza</option>
         <option value="CHOCOLATEDONUT">Donut cu chocolata</option>
-    </select>
-
-    <label for="packingType">Pachet</label>
-    <select name="" id="packingType" required>
-        <option value="PLATE">Farfurie</option>
-        <option value="PLASTICBAG">Pachet de plastic</option>
     </select>
 
     <button type="submit">Order</button>
