@@ -6,7 +6,6 @@ import lombok.Getter;
 @Getter
 public abstract class Snack {
     protected String description = "Unknown snack";
-    public SnackEnum type;
 
     public abstract double getPrice();
 

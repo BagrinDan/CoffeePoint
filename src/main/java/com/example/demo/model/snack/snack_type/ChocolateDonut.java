@@ -4,11 +4,11 @@ import com.example.demo.model.enums.snack_enums.SnackEnum;
 import lombok.Getter;
 
 @Getter
-public class CheesePie extends Snack{
-    protected String description = "CheesePie";
+public class ChocolateDonut extends Snack{
+    protected String description = "Donut cu chocolata";
 
     @Override
     public double getPrice() {
-        return 0.99;
+        return 0.50;
     }
 }

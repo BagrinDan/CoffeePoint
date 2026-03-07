@@ -1,6 +1,8 @@
 package com.example.demo.controller.Coffee;
 
 import com.example.demo.model.dto.Request.service_request.CoffeeOrderRequest;
+import com.example.demo.model.dto.Response.order_response.CoffeeOrderResponse;
+import com.example.demo.model.dto.Response.order_response.OrderResponse;
 import com.example.demo.service.inteface.service_interfaces.CoffeeService;
 import org.springframework.ui.Model;
 import jakarta.validation.Valid;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping("/order") // TODO: CHANGE
+@RequestMapping("/coffee")
 public class CoffeeController {
     private final CoffeeService coffeeService;
 
@@ -21,11 +23,12 @@ public class CoffeeController {
     // Order coffee
     @PostMapping("/create_order")
     public String createOrder(@ModelAttribute CoffeeOrderRequest orderRequest, Model model){
-        double price = coffeeService.order(orderRequest);
+        CoffeeOrderResponse response = coffeeService.order(orderRequest);
 
-        model.addAttribute("price", price);
+        model.addAttribute("price", response.getPrice());
+        model.addAttribute("order", response.getCoffee());
 
-        return "private/order_success";
+        return "private/coffee_order_success";
     }
 
     // TODO: Rest of controller functions

@@ -2,7 +2,7 @@
 <html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Заказ кофе</title>
+    <title>Coffee order</title>
     <style>
         /* Фон всей страницы — светлый кофейный */
         body {
@@ -107,7 +107,7 @@
 </head>
 
 <body>
-<form th:action="@{/order/create_order}" method="post">
+<form th:action="@{/coffee/create_order}" method="post">
     <label for="coffeeType">Coffee</label>
     <select name="coffeeType" id="coffeeType" required>
         <option value="AMERICANO">Americano</option>

@@ -16,7 +16,7 @@ public class SwaggerConfiguration {
         final String securitySchemeName = "bearerAuth";
 
         return new OpenAPI()
-                .info(new Info().title("Fucking Spring Security API").version("1.0"))
+                .info(new Info().title("Fucking Spring Security").version("1.5"))
                 .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
                 .components(new Components()
                         .addSecuritySchemes(securitySchemeName,

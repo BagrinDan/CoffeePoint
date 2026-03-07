@@ -10,9 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class OrderPageController {
 
     // Coffee
-    @GetMapping("/order")
-    public String orderPage() {
-        return "private/order";
+    @GetMapping("/coffee_order")
+    public String coffeeOrderPage() {
+        return "private/coffee_order";
+    }
+
+    @GetMapping("/coffee_order_success")
+    public String coffeeOrderSuccessPage() {
+        return "private/coffee_order_success";
     }
 
     // Snack

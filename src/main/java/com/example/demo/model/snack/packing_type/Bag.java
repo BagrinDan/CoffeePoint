@@ -8,6 +8,6 @@ public class Bag extends Packing{
 
     @Override
     public double getPrice() {
-        return 0.25;
+        return 0.15;
     }
 }

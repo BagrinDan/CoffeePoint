@@ -2,7 +2,7 @@
 <html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Спасибо за заказ</title>
+    <title>Thank you for order</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -53,9 +53,11 @@
 <div class="success-container">
     <h1>Thank you for order!</h1>
 
-
     <p style="font-weight: bold; font-size: 22px; color: #8b5e3c;">
         Price: <span th:text="${price}">0.00</span>
+    </p>
+    <p style="font-weight: bold; font-size: 22px; color: #8b5e3c;">
+        Coffee: <span th:text="${order}">beverage</span>
     </p>
 
     <a th:href="@{/}">Main menu</a>

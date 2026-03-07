@@ -9,7 +9,7 @@ public class Sugar extends Condiment {
 
     @Override
     public double getPrice() {
-        return 0;
+        return beverage.getPrice() + 0.15;
     }
 
     @Override

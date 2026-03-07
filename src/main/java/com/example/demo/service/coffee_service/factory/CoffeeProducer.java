@@ -18,7 +18,7 @@ public class CoffeeProducer {
     public CoffeeProducer(List<CoffeeFactory> creatorList) {
         this.creators = creatorList.stream()
                 .collect(Collectors.toMap(
-                        CoffeeFactory::type,
+                        CoffeeFactory::getType,
                         creator -> creator
                 ));
     }

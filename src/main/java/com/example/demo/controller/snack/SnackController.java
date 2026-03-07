@@ -2,7 +2,7 @@ package com.example.demo.controller.snack;
 
 
 import com.example.demo.model.dto.Request.service_request.SnackOrderRequest;
-import com.example.demo.model.dto.Response.snack_response.SnackOrderResponse;
+import com.example.demo.model.dto.Response.order_response.SnackOrderResponse;
 import com.example.demo.service.inteface.service_interfaces.SnackService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

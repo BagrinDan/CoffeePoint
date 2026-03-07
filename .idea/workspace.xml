@@ -5,37 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75089bd0-2c76-4457-b8d0-64702f8d03cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/snack_response/SnackOrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Packing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/CheesePie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/Snack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/SnackOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/SnackPriceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/SnackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/CheesePieFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackAbsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/private/snack_order_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Request/service_request/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/CoffeeOrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/ChocolateDonut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/snack_abs_factory/ChocolateDonutFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/coffee_service/CoffeeServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/snack_service/SnackServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ai/AiWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ai/AiWaiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Coffee/CoffeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Coffee/CoffeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OrderPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/snack/SnackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/snack/SnackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Americano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Americano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Request/service_request/CoffeeOrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Request/service_request/CoffeeOrderRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Request/service_request/SnackOrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Request/service_request/SnackOrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/enums/Auth/SnackEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/enums/snack_enums/PackingEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/enums/snack_enums/PackingEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/enums/snack_enums/SnackEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/enums/snack_enums/SnackEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/snack_response/SnackOrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/SnackOrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/packing_type/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/CheesePie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/CheesePie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/snack/snack_type/Snack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtCookieFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtCookieFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/UserDetailsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/CoffeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/CoffeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/CoffeeOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/PriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/CoffeePriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/CondimentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/CondimentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Sugar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Sugar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/AmericanoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/AmericanoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/CoffeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/CoffeeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/CoffeeProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/CoffeeProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/EspressoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/EspressoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/LatteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/factory/LatteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/CoffeeOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/CoffeePriceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/SnackOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/generic_interfaces/SnackPriceService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/CoffeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/CoffeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/private/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/private/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/private/order_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/private/order_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/private/snack_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/private/snack_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/private/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/private/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/private/order_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/private/order_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/private/snack_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/private/snack_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/SnackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/SnackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/CheesePieFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/snack_abs_factory/CheesePieFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackAbsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/snack_abs_factory/SnackAbsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/snack_abs_factory/SnackProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/private/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/private/coffee_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/private/order_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/private/coffee_order_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/CafeneaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/private/order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/private/order_success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.CafeneaApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.CafeneaApplicationTests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +78,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,15 +103,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CafeneaApplication.executor": "Run",
+    "JUnit.CafeneaApplicationTests.executor": "Run",
+    "JUnit.CoffeeServiceImplTest (1).executor": "Run",
+    "JUnit.CoffeeServiceImplTest.executor": "Run",
+    "JUnit.CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments.executor": "Debug",
+    "JUnit.CoffeeServiceImplTest.shouldMakeAnError.executor": "Debug",
+    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit.executor": "Run",
+    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments.executor": "Run",
+    "JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse.executor": "Run",
     "Maven.demo [clean].executor": "Run",
     "Maven.demo [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "snack__factory",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/scooperlosses/IdeaProjects/demo/src/main/resources/templates/private",
+    "last_opened_file_path": "/home/scooperlosses/All_Projects/WatchWithMe/Calendar",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -97,8 +137,15 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/private" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.demo.service.snack_service" />
+      <recent name="com.example.demo.service.coffee_service" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CafeneaApplication">
     <configuration name="CafeneaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.CafeneaApplication" />
       <module name="demo" />
@@ -112,9 +159,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoffeeServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.coffee_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service.coffee_service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.coffee_service.CoffeeServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.coffee_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service.coffee_service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.coffee_service.CoffeeServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenCondimentsOverLimit(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.coffee_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service.coffee_service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.coffee_service.CoffeeServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenTooManyCondiments(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnackServiceImplTest.shouldCreateSnackAndReturnResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.snack_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service.snack_service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.snack_service.SnackServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldCreateSnackAndReturnResponse(com.example.demo.model.enums.snack_enums.SnackEnum)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CafeneaApplication" />
+      <item itemvalue="JUnit.CoffeeServiceImplTest (1)" />
+      <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit" />
+      <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" />
+      <item itemvalue="JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CafeneaApplication" />
+        <item itemvalue="JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse" />
+        <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit" />
+        <item itemvalue="JUnit.CoffeeServiceImplTest (1)" />
+        <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" />
       </list>
     </recent_temporary>
   </component>
@@ -132,8 +253,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/snack/SnackController.java</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/Auth/AuthApiController.java</url>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -142,6 +263,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$CafeneaApplication.ic" NAME="CafeneaApplication Coverage Results" MODIFIED="1769417437287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.example.demo.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$CoffeeServiceImplTest_shouldCreateCoffeeWithSeveralCondiments.ic" NAME="CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments Coverage Results" MODIFIED="1772199555723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.demo.service.coffee_service.*</FILTER>
     </SUITE>
   </component>
 </project>

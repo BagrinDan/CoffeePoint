@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class EspressoFactory implements CoffeeFactory {
 
     @Override
-    public CoffeeEnum type() {
+    public CoffeeEnum getType() {
         return CoffeeEnum.ESPRESSO;
     }
 

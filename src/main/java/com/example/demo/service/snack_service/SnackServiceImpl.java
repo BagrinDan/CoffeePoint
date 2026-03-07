@@ -1,10 +1,12 @@
 package com.example.demo.service.snack_service;
 
 import com.example.demo.model.dto.Request.service_request.SnackOrderRequest;
-import com.example.demo.model.dto.Response.snack_response.SnackOrderResponse;
+import com.example.demo.model.dto.Response.order_response.SnackOrderResponse;
 import com.example.demo.service.inteface.service_interfaces.SnackService;
+import com.example.demo.service.snack_service.snack_abs_factory.SnackProducer;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+
 
 @Service
 @AllArgsConstructor
@@ -13,11 +15,9 @@ public class SnackServiceImpl implements SnackService {
 
     @Override
     public SnackOrderResponse order(SnackOrderRequest order) {
-        SnackOrderResponse response = snackProducer.createSnack(order.getSnackType());
-
-        System.out.println("[*] Snack:" + response.getSnack());
-        System.out.println("[*] Snack:" + response.getPrice());
-
-        return response;
+        // Some BL logic in future
+        return snackProducer.createOrder(order.getSnackType());
     }
+
+    // TODO: rest of CRUD operations
 }

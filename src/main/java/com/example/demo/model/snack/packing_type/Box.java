@@ -9,6 +9,6 @@ public class Box extends Packing{
 
     @Override
     public double getPrice() {
-        return 0.15;
+        return 0.25;
     }
 }

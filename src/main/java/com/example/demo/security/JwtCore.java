@@ -57,9 +57,9 @@ public class JwtCore {
     }
 
     // Тестовый
-    public String geneToken(UserDetails userDetails){
+    /* public String geneToken(UserDetails userDetails){
         return generateJwtToken(new HashMap<>(), userDetails);
-    }
+    } */
 
     /*
      *
