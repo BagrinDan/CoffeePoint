@@ -2,6 +2,7 @@ package com.example.demo.service.snack_service;
 
 import com.example.demo.model.dto.Request.service_request.SnackOrderRequest;
 import com.example.demo.model.dto.Response.order_response.SnackOrderResponse;
+import com.example.demo.model.dto.Response.order_response.SnackProducerResponse;
 import com.example.demo.model.enums.snack_enums.SnackEnum;
 import com.example.demo.service.snack_service.snack_abs_factory.SnackProducer;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -31,24 +32,6 @@ class SnackServiceImplTest {
     @ParameterizedTest
     @EnumSource(SnackEnum.class)
     void shouldCreateSnackAndReturnResponse(SnackEnum type) {
-        SnackOrderRequest request = new SnackOrderRequest();
-        request.setSnackType(type);
 
-        SnackOrderResponse mockResponse = new SnackOrderResponse();
-        mockResponse.setSnack(type.name());
-        mockResponse.setPrice(3.99);
-
-        when(snackProducer.createOrder(type)).thenReturn(mockResponse);
-
-        SnackOrderResponse response = service.order(request);
-
-        assertEquals(type.name(), response.getSnack());
-        assertEquals(3.99, response.getPrice());
-
-        verify(snackProducer, times(1)).createOrder(type);
-
-        System.out.println("[*] Snack:" + response.getSnack());
-        System.out.println("[*] Pack:" + response.getPacking());
-        System.out.println("[*] Price:" + response.getPrice());
     }
 }

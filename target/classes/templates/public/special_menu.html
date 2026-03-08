@@ -2,7 +2,7 @@
 <html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
-        <title>Coffee order</title>
+        <title>Special menu</title>
         <style>
             /* Фон всей страницы — светлый кофейный */
             body {
@@ -107,17 +107,12 @@
     </head>
 
     <body>
-    <form th:action="@{/coffee/create_order}" method="post">
-        <label for="coffeeType">Coffee</label>
-        <select name="coffeeType" id="coffeeType" required>
-            <option value="AMERICANO">Americano</option>
-            <option value="LATTE">Latte</option>
-            <option value="ESPRESSO">Espresso</option>
+    <form th:action="@{/private/combo_order}" method="post">
+        <label for="comboType">Special Menu</label>
+        <select name="comboType" id="comboType" required>
+            <option value="STUDENT">Student Combo</option>
+            <option value="EMPLOYEE">Employee Combo</option>
         </select>
-
-        <label>Condiments</label>
-        <input type="checkbox" name="condimentEnum" value="MILK"> Milk
-        <input type="checkbox" name="condimentEnum" value="SUGAR"> Sugar
 
         <button type="submit">Order</button>
     </form>

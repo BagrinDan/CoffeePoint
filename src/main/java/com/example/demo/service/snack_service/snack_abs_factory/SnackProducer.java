@@ -1,6 +1,8 @@
 package com.example.demo.service.snack_service.snack_abs_factory;
 
+import com.example.demo.model.dto.Response.order_response.OrderResponse;
 import com.example.demo.model.dto.Response.order_response.SnackOrderResponse;
+import com.example.demo.model.dto.Response.order_response.SnackProducerResponse;
 import com.example.demo.model.enums.snack_enums.SnackEnum;
 import com.example.demo.model.snack.packing_type.Packing;
 import com.example.demo.model.snack.snack_type.Snack;
@@ -27,7 +29,7 @@ public class SnackProducer {
                 ));
     }
 
-    public SnackOrderResponse createOrder(SnackEnum type){
+    public SnackProducerResponse createObjects(SnackEnum type){
         SnackAbsFactory factory = creators.get(type);
 
         if(factory == null){
@@ -37,10 +39,9 @@ public class SnackProducer {
         Snack snack = factory.createSnack();
         Packing packing = factory.createPacking();
 
-        return SnackOrderResponse.builder()
-                .snack(snack.getDescription())
-                .packing(packing.getDescription())
-                .price(snack.getPrice() + packing.getPrice())
+        return SnackProducerResponse.builder()
+                .snack(snack)
+                .packing(packing)
                 .build();
     }
 }

@@ -36,7 +36,7 @@ public class CoffeeController {
     @PostMapping("/get_order")
     public ResponseEntity<?> getOrder(@Valid @RequestBody CoffeeOrderRequest orderRequest){
 
-        return ResponseEntity.ok("1");
+        return ResponseEntity.ok("List of orders...");
     }
 
     @PostMapping("/update_order")

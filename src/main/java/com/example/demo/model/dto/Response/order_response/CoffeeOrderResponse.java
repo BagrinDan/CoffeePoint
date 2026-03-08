@@ -42,6 +42,5 @@ public class CoffeeOrderResponse extends OrderResponse{
             response.price = this.price;
             return response;
         }
-
     }
 }
