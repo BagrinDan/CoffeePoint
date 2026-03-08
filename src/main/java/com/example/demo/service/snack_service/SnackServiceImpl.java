@@ -27,7 +27,7 @@ public class SnackServiceImpl implements SnackService {
         Snack snack = producerResponse.getSnack();
         Packing packing = producerResponse.getPacking();
 
-        return new SnackOrderResponse.Builder()
+        return SnackOrderResponse.builder()
                 .snack(snack.getDescription())
                 .packing(packing.getDescription())
                 .price(snack.getPrice() + packing.getPrice())

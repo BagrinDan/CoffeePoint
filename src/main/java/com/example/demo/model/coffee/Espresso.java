@@ -16,4 +16,9 @@ public class Espresso extends Beverage {
     public String toString(){
         return "Espresso";
     }
+
+    @Override
+    public Beverage cloneObject() {
+        return new Espresso();
+    }
 }

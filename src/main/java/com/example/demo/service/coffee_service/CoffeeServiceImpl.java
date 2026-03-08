@@ -1,6 +1,7 @@
 package com.example.demo.service.coffee_service;
 
 import com.example.demo.model.coffee.Beverage;
+import com.example.demo.model.dto.Response.builder_order.CoffeeResponseBuilder;
 import com.example.demo.model.dto.Response.order_response.CoffeeOrderResponse;
 import com.example.demo.model.dto.Response.order_response.OrderResponse;
 import com.example.demo.service.coffee_service.factory.CoffeeProducer;
@@ -50,7 +51,7 @@ public class CoffeeServiceImpl implements CoffeeService {
 
         // TODO: Save in bd
 
-        return new CoffeeOrderResponse.Builder()
+        return new CoffeeResponseBuilder()
                 .coffee(beverage.getDescription())
                 .condimentList(condimentEnumList)
                 .price(beverage.getPrice())

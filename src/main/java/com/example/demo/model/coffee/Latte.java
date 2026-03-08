@@ -16,4 +16,10 @@ public class Latte extends Beverage{
     public String toString(){
         return "Latte";
     }
+
+    @Override
+    public Beverage cloneObject() {
+        return new Latte();
+    }
+
 }

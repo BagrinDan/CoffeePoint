@@ -17,4 +17,9 @@ public class Americano extends Beverage{
     public String toString(){
         return "Americano";
     }
+
+    @Override
+    public Beverage cloneObject() {
+        return new Americano();
+    }
 }

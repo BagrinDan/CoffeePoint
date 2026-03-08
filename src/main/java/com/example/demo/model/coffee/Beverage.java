@@ -3,7 +3,7 @@ import lombok.Getter;
 
 
 @Getter
-public abstract class Beverage {
+public abstract class Beverage implements Prototype{
     protected String description = "Unknown Beverage";
 
     public abstract double getPrice();
@@ -11,4 +11,7 @@ public abstract class Beverage {
     public String toString(){
         return getDescription();
     }
+
+    @Override
+    public abstract Beverage cloneObject();
 }

@@ -21,4 +21,9 @@ public class Sugar extends Condiment {
     public String toString(){
         return getDescription();
     }
+
+    @Override
+    public Beverage cloneObject() {
+        return new Sugar(this.beverage.cloneObject());
+    }
 }
