@@ -58,33 +58,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CafeneaApplication.executor": "Run",
-    "JUnit.BeveragePrototypeCheck.executor": "Run",
-    "JUnit.CafeneaApplicationTests.executor": "Run",
-    "JUnit.CoffeeServiceImplTest (1).executor": "Run",
-    "JUnit.CoffeeServiceImplTest.executor": "Run",
-    "JUnit.CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments.executor": "Debug",
-    "JUnit.CoffeeServiceImplTest.shouldMakeAnError.executor": "Debug",
-    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit.executor": "Run",
-    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments.executor": "Run",
-    "JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse.executor": "Run",
-    "JUnit.SpecialMenuSingletonTest.executor": "Run",
-    "Maven.demo [clean].executor": "Run",
-    "Maven.demo [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "builder",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/scooperlosses/All_Projects/WatchWithMe/Calendar",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CafeneaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BeveragePrototypeCheck.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CafeneaApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CoffeeServiceImplTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CoffeeServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CoffeeServiceImplTest.shouldMakeAnError.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpecialMenuSingletonTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;builder&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/scooperlosses/All_Projects/WatchWithMe/Calendar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.demo.service.snack_service" />
