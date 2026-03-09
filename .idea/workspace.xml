@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75089bd0-2c76-4457-b8d0-64702f8d03cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Prototype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/builder_order/CoffeeResponseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/builder_order/OrderBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/ComboOrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/inteface/service_interfaces/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/patterns/BeveragePrototypeCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/patterns/SpecialMenuSingletonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/menu/MenuApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/menu/MenuApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/menu/SpecialMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/menu/SpecialMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Americano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Americano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Beverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Espresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Espresso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/BeveragePrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/BeveragePrototype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Latte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/Latte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/CoffeeOrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/CoffeeOrderResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/SnackOrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/order_response/SnackOrderResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/CoffeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/CoffeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Milk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Milk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Sugar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/coffee_service/component/Sugar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/snack_service/SnackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/PrototypeSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/coffee/PrototypeSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/builder_order/CoffeeResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/dto/Response/builder_order/CoffeeResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.service.coffee_service.CoffeeServiceImplTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.service.coffee_service.CoffeeServiceImplTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,31 +58,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CafeneaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CafeneaApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CoffeeServiceImplTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CoffeeServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.CoffeeServiceImplTest.shouldMakeAnError.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;builder&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/scooperlosses/All_Projects/WatchWithMe/Calendar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CafeneaApplication.executor": "Run",
+    "JUnit.BeveragePrototypeCheck.executor": "Run",
+    "JUnit.CafeneaApplicationTests.executor": "Run",
+    "JUnit.CoffeeServiceImplTest (1).executor": "Run",
+    "JUnit.CoffeeServiceImplTest.executor": "Run",
+    "JUnit.CoffeeServiceImplTest.shouldCreateCoffeeWithSeveralCondiments.executor": "Debug",
+    "JUnit.CoffeeServiceImplTest.shouldMakeAnError.executor": "Debug",
+    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit.executor": "Run",
+    "JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments.executor": "Run",
+    "JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse.executor": "Run",
+    "JUnit.SpecialMenuSingletonTest.executor": "Run",
+    "Maven.demo [clean].executor": "Run",
+    "Maven.demo [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "builder",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/scooperlosses/All_Projects/WatchWithMe/Calendar",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.demo.service.snack_service" />
@@ -118,16 +119,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeveragePrototypeCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.service.coffee_service.*" />
+          <option name="PATTERN" value="com.example.demo.service.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.service.coffee_service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.coffee_service.CoffeeServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.example.demo.service.patterns" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.patterns.BeveragePrototypeCheck" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,22 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.service.coffee_service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.service.coffee_service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.coffee_service.CoffeeServiceImplTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenTooManyCondiments(int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SnackServiceImplTest.shouldCreateSnackAndReturnResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -181,20 +166,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpecialMenuSingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service.patterns" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.patterns.SpecialMenuSingletonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CafeneaApplication" />
-      <item itemvalue="JUnit.CoffeeServiceImplTest (1)" />
+      <item itemvalue="JUnit.BeveragePrototypeCheck" />
+      <item itemvalue="JUnit.SpecialMenuSingletonTest" />
       <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit" />
-      <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" />
       <item itemvalue="JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CafeneaApplication" />
+        <item itemvalue="JUnit.SpecialMenuSingletonTest" />
+        <item itemvalue="JUnit.BeveragePrototypeCheck" />
         <item itemvalue="JUnit.SnackServiceImplTest.shouldCreateSnackAndReturnResponse" />
         <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenCondimentsOverLimit" />
-        <item itemvalue="JUnit.CoffeeServiceImplTest (1)" />
-        <item itemvalue="JUnit.CoffeeServiceImplTest.shouldThrowExceptionWhenTooManyCondiments" />
       </list>
     </recent_temporary>
   </component>

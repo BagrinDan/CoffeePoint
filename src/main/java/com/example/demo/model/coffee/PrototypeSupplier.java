@@ -1,4 +1,6 @@
 package com.example.demo.model.coffee;
 
-public class ф {
+@FunctionalInterface
+public interface PrototypeSupplier {
+    Beverage get();
 }

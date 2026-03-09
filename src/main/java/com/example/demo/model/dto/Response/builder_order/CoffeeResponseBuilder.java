@@ -23,7 +23,6 @@ public class CoffeeResponseBuilder implements OrderBuilder{
         return this;
     }
 
-    // build() просто возвращает готовый объект
     public CoffeeOrderResponse build() {
         return this.response;
     }

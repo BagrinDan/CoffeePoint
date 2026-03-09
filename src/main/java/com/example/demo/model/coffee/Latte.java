@@ -21,5 +21,4 @@ public class Latte extends Beverage{
     public Beverage cloneObject() {
         return new Latte();
     }
-
 }
