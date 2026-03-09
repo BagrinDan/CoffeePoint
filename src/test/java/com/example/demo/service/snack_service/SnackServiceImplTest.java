@@ -4,6 +4,8 @@ import com.example.demo.model.dto.Request.service_request.SnackOrderRequest;
 import com.example.demo.model.dto.Response.order_response.SnackOrderResponse;
 import com.example.demo.model.dto.Response.order_response.SnackProducerResponse;
 import com.example.demo.model.enums.snack_enums.SnackEnum;
+import com.example.demo.model.snack.packing_type.Packing;
+import com.example.demo.model.snack.snack_type.Snack;
 import com.example.demo.service.snack_service.snack_abs_factory.SnackProducer;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,7 +19,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * Test snack creation.
- * There is no complex business logic (for now at least), so we test properly creation of objects
+ * There is no complex business logic (for now at least), so we test objects creation
  */
 
 @ExtendWith(MockitoExtension.class)
@@ -33,5 +35,31 @@ class SnackServiceImplTest {
     @EnumSource(SnackEnum.class)
     void shouldCreateSnackAndReturnResponse(SnackEnum type) {
 
+        SnackOrderRequest request = new SnackOrderRequest();
+        request.setSnackType(type);
+
+        Snack snack = mock(Snack.class);
+        Packing packing = mock(Packing.class);
+
+        when(snack.getDescription()).thenReturn("Test snack");
+        when(snack.getPrice()).thenReturn(5.0);
+
+        when(packing.getDescription()).thenReturn("Test packing");
+        when(packing.getPrice()).thenReturn(2.0);
+
+        SnackProducerResponse producerResponse =
+                new SnackProducerResponse(snack, packing);
+
+        when(snackProducer.createObjects(type))
+                .thenReturn(producerResponse);
+
+        SnackOrderResponse response = service.order(request);
+
+        assertNotNull(response);
+        assertEquals("Test snack", response.getSnack());
+        assertEquals("Test packing", response.getPacking());
+        assertEquals(7.0, response.getPrice());
+
+        verify(snackProducer).createObjects(type);
     }
 }

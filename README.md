@@ -1,50 +1,62 @@
-CoffeeProject
+# CoffeePoint ver 1.0.1 ☕
 
-University Project – TMPPP
+A robust coffee shop management system built with **Spring Boot**.
+This university project focuses on implementing several design patterns and demonstrating their practical use in a real-world style application.
 
-Goal
+---
 
-    Design and implement a coffee shop management system using OOP, SOLID principles, and creational design patterns.
+## Tech Stack
 
-Project Scope
+* **Language:** Java 25 (Latest Features)
+* **Framework:** Spring Boot 3.x
+* **Build Tool:** Maven
+* **Database:** MariaDB
+* **Architecture:** N-layer Architecture
 
-    This project demonstrates practical usage of design patterns in a real-world inspired scenario (coffee shop domain).
+---
 
-1. OOP & SOLID Principles:
+## Key Features
 
-       Single Responsibility Principle
-    
-       Open/Closed Principle
-    
-       Liskov Substitution Principle
-    
-       Interface Segregation Principle
-    
-       Dependency Inversion Principle
+* Spring auth
+* Decorator and Factory Method for coffee creation
+* Abstract factory for snack creation
+* Builder for response building
+* Prototype for 'combo' products
+* Singleton for menu
 
-Clear separation of concerns between:
+---
 
-    Order management
+## In the future
 
-    Product creation
+* Strategy for AI behaviour 
+* * Base behavior cheating, second to take order from client
+* Command for Coffee and Snack undo order
+* Observer for cheating with barista
+* ...
 
-    Payment handling
+## Base showcase
 
-    Pricing logic
+![img.png](proj_img/img.png)
 
-🏗 2. Factory Method (Implemented)
 
-    Used for creating different types of coffee:
-    
-    Example:
-    
-    EspressoFactory
-    
-    LatteFactory
-    
-    CappuccinoFactory
 
-Each factory creates a specific Coffee object without exposing instantiation logic.
+![img_1.png](proj_img/img_1.png)
 
-Why?
-To decouple object creation from business logic.
+
+![img_2.png](proj_img/img_2.png)
+
+
+![img_3.png](proj_img/img_3.png)
+
+
+## ⚙Installation & Setup
+
+### Prerequisites
+* **JDK 25** or higher
+* **Maven 3.9+**
+* A running instance of your preferred SQL database
+
+### Getting Started
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/BagrinDan/CoffeePoint.git](https://github.com/BagrinDan/CoffeePoint.git)

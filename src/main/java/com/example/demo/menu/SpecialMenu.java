@@ -20,20 +20,21 @@ import java.util.Map;
 @Component
 public class SpecialMenu {
 
-    private static SpecialMenu instance;
     private final Map<ComboEnum, BeveragePrototype> menu = new HashMap<>();
 
-    private SpecialMenu() {
+    /*
+
+        We didn't use 'getInstance() and private in constructor',
+        because Spring creates a single bean instance for this component by default (singleton scope) via annotation @Component
+
+    * */
+
+    public SpecialMenu() {
         initMenu();
     }
 
-    public static SpecialMenu getInstance() {
-        if (instance == null) {
-            instance = new SpecialMenu();
-        }
-        return instance;
-    }
-
+    // This could also be implemented using a Factory Method,
+    // but here it is intentionally kept simple to demonstrate the Prototype pattern
     private void initMenu() {
         // Student combo
         menu.put(ComboEnum.STUDENT, new BeveragePrototype(() -> {
@@ -49,6 +50,10 @@ public class SpecialMenu {
     }
 
     public Beverage getPrototype(ComboOrderRequest request) {
+        if (request == null) {
+            return null;
+        }
+
         BeveragePrototype prototype = menu.get(request.getComboType());
         return prototype != null ? prototype.cloneObject() : null;
     }
